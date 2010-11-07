@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="my_rails">
+  <template name="reai" value="redirect_to :action =&gt; :$action$, :id =&gt; @$item$" description=":redirect_to(action, id)" toReformat="true" toShortenFQNames="true">
+    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="rec" value="redirect_to :controller =&gt; &quot;${1:items}&quot;" description=":redirect_to (controller)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="reca" value="redirect_to :controller =&gt; &quot;${1:items}&quot;, :action =&gt; &quot;${2:list}&quot;" description="redirect_to (controller, action)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="recai" value="redirect_to :controller =&gt; &quot;${1:items}&quot;, :action =&gt; &quot;${2:list}&quot;" description="redirect_to (controller, action, id)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="reb" value="redirect_to :back" description="redirect_to :back" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="verify" value="verify :only =&gt; [:$1], :session =&gt; :user, :params =&gt; :id, :redirect_to =&gt; {:action =&gt; '${2:index}'}" description="verify -- redirect" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="des" value="describe &quot;$subject$&quot; do&#10;  $END$&#10;end" description="describe (String)" toReformat="true" toShortenFQNames="true">
+    <variable name="subject" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="sweeper" value="class ${1:Model}Sweeper &lt; ActionController::Caching::Sweeper&#10;  observe ${1:Model}&#10;&#10;  def after_save(${1/./\l$0/})&#10;    expire_cache(${1/./\l$0/})&#10;  end&#10;&#10;  def after_destroy(${1/./\l$0/})&#10;    expire_cache(${1/./\l$0/})&#10;  end&#10;&#10;  private&#10;&#10;    def expire_cache(${1/./\l$0/})&#10;      ${0:expire_page ${1/./\l$0/}s_path &#10;      expire_page ${1/./\l$0/}_path(${1/./\l$0/})}&#10;    end&#10;&#10;end" description=":create sweeper" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="defcreate" value="def create&#10;  @$model$ = $Model$.new(params[:$params$])&#10;  $END$&#10;  respond_to do |wants|&#10;    if @$model$.save&#10;      flash[:notice] = '$Model$ was successfully created.'&#10;      wants.html { redirect_to(@$model$) }&#10;      wants.xml { render :xml =&gt; @$model$, :status =&gt; :created, :location =&gt; @$model$ }&#10;    else&#10;      wants.html { render :action =&gt; &quot;new&quot; }&#10;      wants.xml { render :xml =&gt; @$model$.errors, :status =&gt; :unprocessable_entity }&#10;    end&#10;  end&#10;end" description=":def create-resource" toReformat="true" toShortenFQNames="true">
+    <variable name="Model" expression="classNameComplete()" defaultValue="&quot;Model&quot;" alwaysStopAt="true" />
+    <variable name="model" expression="decapitalize(Model)" defaultValue="" alwaysStopAt="false" />
+    <variable name="params" expression="" defaultValue="model" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="cla" value="class $Model$Controller &lt; ApplicationController&#10;  before_filter :find_$model$&#10;  &#10;  $code$&#10;&#10;  private&#10;  &#10;  def find_$model$&#10;    @$model$ = $Model$.find(params[:id]) if params[:id]&#10;  end&#10;end" description=":create controller class" toReformat="true" toShortenFQNames="true">
+    <variable name="Model" expression="classNameComplete()" defaultValue="&quot;Model&quot;" alwaysStopAt="true" />
+    <variable name="model" expression="decapitalize(Model)" defaultValue="" alwaysStopAt="false" />
+    <variable name="code" expression="" defaultValue="&quot;# do stuff...&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="flashn" value="flash[:notice] = &quot;Successfully created...&quot;$END$" description=":flash[:notice]" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="XML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="flashe" value="flash[:error] = &quot;Boo! It failed... #{@$model$.errors.full_messages.to_sentence}&quot;$END$" description=":flash{:error]" toReformat="true" toShortenFQNames="true">
+    <variable name="model" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bf" value="before_filter :$method$, :only =&gt; [:$actions$], :except =&gt; [:$actions$]" description=":before_filter" toReformat="true" toShortenFQNames="true">
+    <variable name="method" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true" />
+    <variable name="actions" expression="" defaultValue="&quot;create&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="hmt" value="has_many :${1:objects}, :through =&gt; :${2:join_association}${3:, :source =&gt; :${4:${2}_table_foreign_key_to_${1}_table}}" description="has_many (through)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="anaf" value="accepts_nested_attributes_for $association_name$, :allow_destroy =&gt; $allow_destroy$, :reject_if =&gt; proc {|obj| $object$.blank?}" description="accepts_nested_attributes_for" toReformat="true" toShortenFQNames="true">
+    <variable name="association_name" expression="" defaultValue="'association_name'" alwaysStopAt="true" />
+    <variable name="allow_destroy" expression="" defaultValue="'true'" alwaysStopAt="true" />
+    <variable name="object" expression="" defaultValue="'obj'" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="xput" value="xhr :put, :update, :id =&gt; $id$, :$object$ =&gt; {$attriibutes$}$END$" description="xhr put" toReformat="true" toShortenFQNames="true">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="attriibutes" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="xpost" value="xhr :post, :create, :$object$ =&gt; { $attributes$ }" description="xhr post" toReformat="true" toShortenFQNames="true">
+    <variable name="object" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="attributes" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="xget" value="xhr :get, :show $2$ $END$" description=":xhr get" toReformat="true" toShortenFQNames="true">
+    <variable name="2" expression="" defaultValue="&quot;, :id =&gt; &quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="xdelete" value="xhr :delete, :${1:destroy}, :id =&gt; ${2:1}$0" description=":xhr delete" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="rest" value="respond_to do |wants|&#10;  wants.html { $END$ }&#10;end" description="respond_to" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="wants" value="wants.$format$ { $END$}" description=":wants format" toReformat="true" toShortenFQNames="true">
+    <variable name="format" expression="" defaultValue="&quot;js|xml|html&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+

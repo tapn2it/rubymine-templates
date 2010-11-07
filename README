@@ -1,0 +1,13 @@
+= Rubymine Extensions - templates
+
+
+Installation
+
+navigate to your rubymine preferences directory (ex: cd ~/Library/Preferences/RubyMine30)
+rename or delete the 'templates' directory
+
+git clone git://github.com/tapn2it/rubymine-templates.git templates
+
+restart RubyMine
+open rubymine preferences
+navigate to File -> Settings -> Live Templates

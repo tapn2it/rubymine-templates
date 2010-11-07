@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="my_jquery">
+  <template name="$" value="$('$context$')&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="context" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name="this" value="$(this)" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".each" value=".each(function($INDEX$) {&#10;  $END$&#10;});" description="Iteration" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".get" value=".get($INDEX$)" description="Iteration" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".size" value=".size()" description="Iteration" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name="ready" value="$(function() {&#10;  $END$&#10;});" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".bind" value=".bind('$EVENT_NAME$', function($EVENT$) {&#10;  $END$&#10;});" description="Events" toReformat="false" toShortenFQNames="true">
+    <variable name="EVENT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="EVENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".width" value=".width($WIDTH$)" description="Style" toReformat="false" toShortenFQNames="true">
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".unbind" value=".unbind('$EVENT_NAME$');" description="Events" toReformat="false" toShortenFQNames="true">
+    <variable name="EVENT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".trigger" value=".trigger('$EVENT_NAME$');" description="Events" toReformat="false" toShortenFQNames="true">
+    <variable name="EVENT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name="$.each" value="$.each($CONTAINER$, function($INDEX$) {&#10;  $END$&#10;});" description="Array Iterator" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTAINER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INDEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name="$.eachh" value="$.each($CONTAINER$, function($NAME$, $VALUE$) {&#10;  $CONTENT$&#10;});" description="Hash Iterator" toReformat="false" toShortenFQNames="true">
+    <variable name="CONTAINER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".css" value=".css('$ATTR$', '$VALUE$')" description="Style" toReformat="false" toShortenFQNames="true">
+    <variable name="ATTR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".height" value=".height($HEIGHT$)" description="Style" toReformat="false" toShortenFQNames="true">
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".removeClass" value=".removeClass('$CLASS_NAME$')" description="Style" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".addClass" value=".addClass('$CLASS_NAME$')" description="Style" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".toggleClass" value=".toggleClass('$CLASS_NAME$')" description="Style" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".attr" value=".attr('$ATTR$', '$VALUE$')" description="Attributes" toReformat="false" toShortenFQNames="true">
+    <variable name="ATTR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".removeAttr" value=".removeAttr('$ATTR_NAME$')" description="Attributes" toReformat="false" toShortenFQNames="true">
+    <variable name="ATTR_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".val" value=".val('$TEXT$')" description="Attributes" toReformat="false" toShortenFQNames="true">
+    <variable name="TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".append" value=".append('$HTML$')" description="DOM Modifications" toReformat="false" toShortenFQNames="true">
+    <variable name="HTML" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".prepend" value=".prepend('$HTML$')" description="DOM Modifications" toReformat="false" toShortenFQNames="true">
+    <variable name="HTML" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".prependTo" value=".prependTo('$SELECTOR$')" description="DOM Modifications" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".appendTo" value=".appendTo('$SELECTOR$')" description="DOM Modifications" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".after" value=".after('$HTML$')" description="DOM Modifications" toReformat="false" toShortenFQNames="true">
+    <variable name="HTML" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+  <template name=".before" value=".before('$HTML$')" description="DOM Modifications" toReformat="false" toShortenFQNames="true">
+    <variable name="HTML" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="false" />
+      <option name="RHTML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="OTHER" value="false" />
+      <option name="HAML" value="false" />
+    </context>
+  </template>
+</templateSet>
+
