@@ -300,5 +300,31 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="controllerext" value="module MyEngineActionControllerExtension&#10;  def self.included(base)&#10;    base.send(:include, InstanceMethods) &#10;    base.before_filter :my_method_1&#10;    base.after_filter :my_method_2&#10;  end&#10;&#10;  module InstanceMethods&#10;   #...........&#10;  end&#10;end" description="controller extension module template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="midware" value="module Rack&#10;  class LocaleSetter&#10;    def initialize app&#10;      @app = app&#10;    end&#10;&#10;    def call env&#10;      some_method(env)&#10;      @app.call env&#10;    end&#10;&#10;    def some_method(env)&#10;      begin&#10;        # some code&#10;      rescue Exception =&gt; e&#10;        # some other code&#10;      end&#10;    end&#10;  end&#10;end" description="Rack middleware module template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="XML" value="false" />
+      <option name="RUBY" value="true" />
+      <option name="RHTML" value="false" />
+      <option name="HAML" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
 </templateSet>
 
